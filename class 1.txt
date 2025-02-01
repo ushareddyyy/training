@@ -1,0 +1,531 @@
+GITHUB
+______
+
+->store data permanently
+->gives visual experience
+->gives us collaboration
+
+GIT
+___
+
+->it is a version control system used to track the changes in the files/folders
+-> untracked->tracked->store in staging area(shows the tracked files)->local repo->main repo
+->commends
+1.git init(initialize the empty repository)
+2.git add filename(working copy[local machine] to staging area,untracked file to tracked file)
+3.git commit -m "msg"(staging area to local repo , used to  write commit msg i.e., can have changes made to a particular file)
+4.git push url(push code from local repo to main repo)
+5.git clone url(copy of remote repo[ github ] to local machine)
+
+
+Day2
+____
+
+-git  add .
+-git path -u origin master
+-
+EA1E-F1E2
+
+Day3
+____
+
+Hypertext-:Hyperlinks anchor tag
+-used to create structure content
+
+CSS-:add Styles to the website
+
+JavaScript-:used to design websites
+
+-Static: remains constant to everyone
+--eg:FB login
+-Dynamic:changes to everyone
+--ex: FB interface,
+--Youtube recommendations,
+--google maps # time to time data is updated,
+
+JavaScript
+__________
+
+-it helps to make websites dynamically and interactive.
+-used both on client side(in the browser) and serverside(node js).
+-it allows the webpages to change it with out reloading the entire page
+-it is a scripting languages used to write scripts to develop webpages.
+-it is often used for form validations.
+-it was first released by "NetScape"
+-it can be implemented in the html using <script> tag.
+-open any browser right click>inspect>inside script tag can write javascript code
+1)Variables:
+____________
+
+-python,java
+-variables are used to store data(any kind of data)
+-when we use same variable name the second value of the variable will rewrite old one(second value is considered ).
+-variables always starts with letters,_,$ but not numbers.
+-variables can include letters,numbers,_,$.
+-for all the programming languages except sql variable are case-Sensitive
+-space between two variable names are not allowed
+
+Types of variables
+1)var
+-re-initialization
+-re-declaration
+2)let
+-re-initialization
+-re-declaration(not possible)
+3)const
+-re-initialization(not possible)
+-re-declaration(not possible)
+
+var(variable) u(identifier)="usha"(value/data);
+console.log(u);=>it is a method to print the o/p in the developer console.
+document.writeLn();=>it is the method to print the o/p on the UI
+
+Coments are the ignored lined by the browser
+1)html:-<!--comment to be done -->
+css:-/*comment/*
+2)
+
+dataTypes
+_________
+
+1)primitive
+ -immutable
+ -can store only single values
+	-String
+	-number
+ 	-Boolean
+ 	-undefined
+	-null
+	-symbol
+	-bigint
+2)non-primitive
+ -they are user defined
+ -mutable
+ -can store only multiple values
+ 	-array
+	-functions
+	-objects
+	-math,date,json
+
+3)String
+________
+
+-sequence of characters enclosed within "", '',(``)template literals/backtiks
+
+number:-
+- -2^53-1 to +2^53-1 upto this range we consider as number data type;
+- beyond this range is bigint
+-any value sufix with "n" will be bigint.
+
+Boolean:-true/false
+
+undefined:-variable is declared but not initialized with the value
+
+null:-it is an empty value
+
+Day4
+____
+
+1)Operators:
+
+-They are special Type of Sysmbols used to perform some operations on operands.
+ex:-a+b(a,b are operands ,+ is an operator)
+
+Types of Operators:
+
+-unary
+-binary
+-ternary(op1 ? op2 :op3)
+
+1.Arithmatic Operators
+2.Assignment Operators
+3.relational Operators
+4.logical Operators
+
+1)Arithmatic Operators:
+-addition
+-substaction
+-multiplication
+-division
+-modulus
+-exponential
+-increment(++)--increment will happen with on evalue
+ -per-increment--increment before execution
+ -post-increment--increment after execution
+-decrement(--)
+ -per-decrement
+ -post-decrement
+
+ -Concatinating:-adding 2 or more strings
+ -typescasting:-converting one datatype to another
+ -NaN:-not a number
+
+ 2)Assignment Operators
+   - =,+=,*=,/=
+
+3)Relational Operators
+-which are used to compare two values 
+-always retuens boolean
+- ==,===,!=,!==,>,>=,<,<=
+
+differences between "==" and "==="
+"==" it will check value but not data Type.
+"===" it will check both values and data type
+ "!=" it will check value but not data Type.
+"!==" it will check both values and data type
+	
+4)Logical Operators
+-AND(&&):when both conditions are true return true else false
+-OR(&&):when any one consition is true return true else false
+-NOT(!):if true returns false and viseversa
+
+5)Decision making statements:-
+-if:only if condition is true then executes
+-if else:
+-else if ladder
+-switch
+-ternary
+
+prompt():- takes values manually 
+
+Day 5
+_____
+
+Looping statements
+__________________
+
+ -to execute a  block of code repeatedly
+)))for Looping:
+for(Initialization,condition,updation){
+	statements
+}
+-when the no of iterations are known
+)))while
+while(condition){
+	statements
+}
+-when the no of iterations are not known
+)))do while
+do(){
+}
+while(conditions){//entry control
+	statements
+}
+-when the no of iterations are not known
+
+What is entry control and exit control loop:
+--entry control loops are for,while.
+--exit control loops are do-while.
+
+-)minimum iteration count of for and while is "0"
+-)minimum iteration count of do-while is "1"
+
+What is the difference between breah and continue?
+break:-when condition satisfy it will terminate the loop permanently
+continue:-when condition satisfy it wil skip the condition
+
+=]Function:
+___________
+
+-it is a block of code used to perform specific task
+-reusability
+-javaScript also code as functionalized 
+-it is a non primitive data type
+syntax:- function function_name(optional oparameters){//function declaration
+			//statements
+		}
+		function_name(arguments);
+		let a=10;
+
+Types of functions:-
+____________________
+
+1)).named functions(fun which is invoked using same nMAE)
+2)).anonymus function(FUNCTION WHICH DOES NOT HAVE NAME TO DECLARE NAME AND INVOKING THE NAME)
+-without decalring the function name body it cant be execute
+3)).function expression //csn be called multiple times
+ananymus function declaration is assigned to variable and invoked withe same variable
+let x=function(){
+    console.log("function expression");
+};
+x();
+4)).Immediate invoke function expression //it can call only once
+once function is created it should be invoked immediately
+(function(){
+    console.log("IIFE");
+})
+();
+5)).Arrow function --it is used to concise the normal function syntax
+syntax:-()=>{}
+-it is similar to anonymus function
+let x=()=>{
+    console.log("Arrow function");
+};
+x();
+let x=_=>
+    console.log("Arrow function");
+
+x();
+6.))Higher order function
+-A function which accepts another function as an arguments to its parameter.
+7)).Callback function
+-a function that is passed as an argument to higher order function
+))closure
+-is a memory where functions are bundle together by giving  an accessibility to inner most function to access the variables of the outer most function.
+NOTE:-
+-javascript first name is live Scrip
+-brendeneach
+-current version of javascript is es14.
+-es6-highly used till now
+-es-ECMA script
+ECMA-european computer manufacturing association
+
+*   *   *   *  *
+*   *   *   *  *
+*   *   *   *  *
+*   *   *   *  *
+*   *   *   *  *
+
+*   
+*   *   
+*   *   *   
+*   *   *   *  
+*   *   *   *  *
+
+*              *
+    *       *   
+        *       
+    *       *   
+*              *
+
+use for loop
+use nested for loop
+use coordinates
+
+
+RETURN STATEMENT:
+__________________
+-return the expression,variables or values
+-also used to terminate or stop the execution
+function test(a,b){
+    console.log("hi");
+    console.log("hhvj");//explicit return
+    return a+b;
+    console.log("hello");
+}
+The return keyword is used in programming to:
+Finish the execution of a method.
+Return a value from a method.
+Exit a function and return a value.
+
+Day 6:
+_______
+
+Arrays:
+________
+
+-it is non primitive data type.
+-array can store multiple values within a single variable.
+-collection of item/values.
+-array can store homogenous values and hetrogenous values.
+-)Syntax:- let arr=[];
+
+ex:- 
+
+
+map and forEach difference
+--------------------------
+
+-map:-it is used to iterate the values of the array one by one;
+-it will returns new copied array ;
+-foeEach:-it is used to iterate the values from the array
+-it will returns "undifined"
+
+
+)))methods in an array
+
+-push(),pop(),unshift(),shift(),reverse(0,join(),concat(0))
+ 
+)))what is an object?
+
+-object ia an entity which is used to store the values in the form of key and value pairs;
+it is an entity which is having states and behaviours.
+-object is an physical entity to store an entity which is having states and behavoiurs(method);
+
+Note:---
+-javascript is a object based because dont use class + but after EC6 class is introduced in javaScripts
+
+Systax:- let obj={};
+ex:-
+let obj{
+	name:"sai",
+	age=18
+}
+Day 7
+_____
+
+JSON PLACEHOLDER
+
+JSON:-javascript object notation
+-it is used to transmit the data from client to server to client.
+-it is always in the form of "String"
+SYNTAX:-
+{
+	"key":"value"
+	}
+-for json no need to store it inside the variable
+-here both keys and values should be " " except number
+
+-methods of json
+1.JSON.stringfy();-it is used to convert javascript object to json object
+2.JSON.parse();-used to convert json object into javascript object
+
+[(((fontawesome.com -for symbols
+font awesome cdn links--((paste in header ]
+
+Day 8
+______
+
+Asynchonus in javascript
+------------------------
+-to perform multiple task in javascript
+
+1.setTimeout();-it is a web application used to perform async operations at
+syntax;]-setTimeout(callbackfn,)
+2.setIntervel();-used to perform async operations at a certain timeout
+syntax;]-setIntervel(callbackfn,timeout)
+(3.promise;-it is an object which represents eventual completion or failures of an async operations
+  states of promise
+  1.pending state
+  2.fulfilled state
+  3.rejected state
+syntax;]-let p = new Promise((resolve,reject)=>{});
+-the actual way of executing the promise is instance methods
+	1.then();it is used to execute fulfilled state
+	2.catch();it executes rejected state
+	3.finally();it will print once the promise is settled
+
+(4.async & await
+
+note:-by default,javascript is synchronus.
+
+Day 9
+______
+
+coding
+
+Day 10
+______
+
+async:-async keyword is used to convert synchronus into Asynchonus and start to executethe promise
+await:-await is used to make the function to wait until the promise complete
+
+DOM:-
+-----
+document object model
+-it is used to add,remove,update the content in the html document.
+-it is used to manupulate the content in the html document.
+
+-methods
+---------
+1.document.getElementById(""):- it is used to select or target the html elemet based on "id attribute value".
+								-id attribute should be uniqe or used with one element
+2.document.getElementByClassName(""):-it is used to select or target the html elemet based on "class attribute value".
+								-class attribute can be used with comman name
+3.document.getElementByTagName(""):-it is used to select html element based on tag names 
+4.document.getElementByName(""):-it is used to select html element based on name attribute value.
+---these below methods are different from above attributes
+---below attributes select html methods based on css selectors
+5.document.querySelector("#id"):-it selects only on elements
+6.document.querySelectorAll("#.class"):-it selects on multiple elements
+innerText:it is a property to manipulate plain text
+innerHtml:used to add remove content with 
+-events
+--------
+--these are actions performed on html elements
+--events are click events,mouse events,ket events
+
+click events
+------------
+onclick
+ondblclick
+onsubmit
+onchange
+
+mouse events
+------------
+-dynamic events from dom
+
+
+Day 11
+_______
+
+dynamic creation of html element from javascript
+-------------------------------------------------
+-to create dynamic element we have a method called document.createElement();
+-to create an attribute we have a method called setAttribute();
+-to remove attribute we have a method called removeAttribute()
+-any element which is created in javascript will not add directly to documents,we have
+ to manually add using append file
+
+ Day 12
+ ______
+
+ take a array of objects(employee),where each object contains properties such as empid,empname,empcompany,empsalary,empaddress
+ where empaddress is further having 2 more properties of object such as empcity and emp area
+ print tehase propertites in a form of a table on the UI by using javascript
+
+Day 13
+_______
+
+ Modules
+ --------
+ in javascript import/exports code to another js files are Modules
+ 
+ 1)named Modules
+ ---------------
+ -definenly while importing should use the same name that you are defining exactly with in{}
+ -you can export as many modules of code that you want.
+
+ 2)default modules
+ -----------------
+ -while importing can use any name that you want.You can export only one modules of code
+ in one source file.You should use the default keyword while exporting.
+
+)))))careate a signup form that contains username(!empty),
+email(@,!empty),
+password(should be 6) and
+confirm password(same,!empty),
+once you click on submit button,
+a alert should be popped up on you screen "form is submitted successfully" 
+if and only if all the validations are correct.
+
+Day 14
+_______
+
+ReactJs:
+--------
+-Javascript is having libraries and frameworks.
+
+-libraries:	-it is a collection of codes.
+			-less set of rules
+			-reactjs,jquery etc
+-frameworks:-it is a collection of libraries
+			-more set of rules
+			-angular,vuejs etc
+
+important features of ReactJs
+-----------------------------
+1.reactjs is a javascript libreary to build rich reusable user interface.
+2*.reactjs is faster beacuse of "vertual Dom".
+3*.react follows component based architecture.
+4*.react folloows unidirectional data flow.
+5.react follows both client side rendaring and server side rendaring
+6.react was introduced by facebook in 2011 BY JORDAN WALKE.
+-at 2013 react made as a open source
+-react is free and platform independent
+
+-to install ReactJs-install node js (cmd node -v);
+-create npm install create-react-app --g
+-npm init react-app myapp
+
