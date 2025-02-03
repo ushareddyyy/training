@@ -1,0 +1,131 @@
+Day 14
+_______
+
+ReactJs:
+--------
+-Javascript is having libraries and frameworks.
+
+-libraries:	-it is a collection of codes.
+			-less set of rules
+			-reactjs,jquery etc
+-frameworks:-it is a collection of libraries
+			-more set of rules
+			-angular,vuejs etc
+
+important features of ReactJs
+-----------------------------
+1.reactjs is a javascript libreary to build rich reusable user interface.
+2*.reactjs is faster beacuse of "vertual Dom".
+3*.react follows component based architecture.
+4*.react folloows unidirectional data flow.
+5.react follows both client side rendaring and server side rendaring
+6.react was introduced by facebook in 2011 BY JORDAN WALKE.
+-at 2013 react made as a open source
+-react is free and platform independent
+
+-to install ReactJs-install node js (cmd node -v);
+-create npm install create-react-app --g
+-npm init react-app myapp
+
+
+Day 16
+_______
+
+single page application:contains only one html page
+-changeds happen in one tap
+-there is no page refrseshing,reloading
+
+multi page application:contains multiple html page
+-changeds happen in many tap
+-there is having page refrseshing,reloading
+
+))REACT is mainly for single page application
+-real dom is created automatically
+
+))What  is  virtual dom?
+--------------------------
+-virtual dom is craeted explicitly
+-it is a virtual presentation of UI,which is kept in the memory later synced with real dom with the help of a library called as "ReactDOM".
+-the updation of real dom with virtual dom
+- the entire process of updating realDOM with VDOM with the "Reconcialation"
+
+))Diffing algorithm
+
+JSX;
+----
+
+-Javascript and XML
+-it is a javascript syntax extention used to create HTML-like markup in the react.
+-Actual way to create a element in react is is by using a methos
+    -React.createElement("target",{propertyname"}/null,content/children)
+
+-JSX not part of react but it is recomended to use in react
+
+RULES of JSX;
+-------------
+1.every element inrrespect of pared/unpared tag both must be closed
+ex:<h1></h1>,<input/>
+2.more than one JSX element is used then they must raped with one parent element
+
+JSX expression
+----------------
+-it us used to call the variable,mathematical expression inside lement.
+-syntax:<h1>{}</h1>
+
+-
+components
+-----------
+-they are files/modules which consist of js logics which can be reused
+1.class based components(CBC)
+2.functional based components(FBC)
+
+1.class based components(CBC)
+-------------------------------
+-it is similar to js es6 class
+-CBC are "statefull" componet b/c of default State object present inside the class
+-syntax:-
+class Person{
+    constructor(name,age){
+        this.age=age;
+        this.name=name;
+    }
+}
+class child extends Person{
+    constructor(name,age,city){
+        super(name,age);//inhert properties fom parent to child
+        this.city=city;
+    } 
+}
+
+SYNTAX:-
+class App extends React.Component{
+    render(){//responsible to print this JSX in the UI
+        return(
+            //JSX
+        )
+    }
+}
+export default App;
+
+2.functional based components(FBC)
+----------------------------------
+-they are similar to js functions
+-they are "stateless" b/c there is no State object until react v16.8
+Syntax:
+function App(){
+    return(
+
+    )
+}export default App;
+
+OR
+ const App=()=>{
+    return(
+
+    )
+ }export default App;
+
+ NOTE:
+ 
+
+
