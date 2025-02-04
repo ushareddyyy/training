@@ -1,5 +1,5 @@
 
-import React from "react";
+
 /* import React from 'react';
 import './App.css';
 
@@ -35,10 +35,40 @@ export default App; */
   
 }export default App; */
 
+
+
+//!component componnets
+/* import React from "react";
+import Navebar from './components/Navbar';
+import Main from './components/Main'
+import Sidebar1 from './components/Sidebar1'
+import Sidebar2 from './components/Sidebar2'
+import Footer from './components/Footer'
+import global from './global.css';
 const App=()=>{
   return(
-      <h1>hello</h1>
-  )
+    <div className='app'>
+      <Navebar/>
+      <Main/>
+      <div className='sidebar'>
+     <Sidebar1/>
+     <Sidebar2/>
+     </div>
+     <Footer/>
 
+    </div>
+  )
 }
-export default App;
+export default App; */
+import React, { Component } from 'react'
+import CBCPropEx from './propsex/CBCPropEx'
+
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <CBCPropEx username="usha" />
+      </div>
+    )
+  }
+}
