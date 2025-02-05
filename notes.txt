@@ -126,6 +126,24 @@ OR
  }export default App;
 
  NOTE:
+while writing a react component the names must started with capital letters.
+
+
+ Day 17
+ ______
+
+ Component compositions:
+ -----------------------
+ -it is used to combine multiple components into single application
+
+ Props;
+ ------
+ -used for exchaning from parent to child
+ -it is nothing but properties similar to html attributes
+ -props is an object-used to exchange information or data from parent component to child component
  
+Day 18
+_______
+
 
 

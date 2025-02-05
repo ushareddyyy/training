@@ -60,15 +60,45 @@ const App=()=>{
   )
 }
 export default App; */
-import React, { Component } from 'react'
+/* import React, { Component } from 'react'
 import CBCPropEx from './propsex/CBCPropEx'
+import FBCPropsEx from './propsex/FBCPropsEx'
 
 export default class App extends Component {
   render() {
-    return (
-      <div>
-        <CBCPropEx username="usha" />
-      </div>
+    return ( */
+      /* <div>
+        <CBCPropEx username="usha"
+        age={20}
+        hobbies={["reading" , "listening music"]}
+        address={{city:"hyd" ,area:"kphb"}}
+        sendFun={function(){alert("hi i am usha")}}
+        />
+      </div> */
+    /*   <FBCPropsEx
+      username="usha"
+      isselected={true}
+      hobbies={["reading" , "listening music"]}
+
+      />
     )
   }
+} */
+import React from 'react'
+import PropChildex from './propsex/PropChildex'
+import SubChild from './propsex/SubChild'
+
+function App() {
+  return (
+    <div>
+      <PropChildex num={100}>
+        <h1>hi props children</h1>
+        <SubChild/>
+      </PropChildex>
+      
+    </div>
+    
+  )
 }
+
+export default App
