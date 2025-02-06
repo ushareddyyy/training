@@ -145,5 +145,39 @@ while writing a react component the names must started with capital letters.
 Day 18
 _______
 
+props.children:-
+-it is a spacial type of 
+props.drilling:-
+-it is used to pass down to the child component
+-to avoid props drilling they introduced context API,redux
+-redux is a 3rd party library 
 
+Day 19
+_______
 
+State:-
+-------
+-it is an mutabel object used to store or isolate the data inside the component.
+
+class component:-
+-----------------
+-it is having state object by default
+-to update the state object of class Component we have a method "this.setState()"
+
+functional component:-
+-by default functional component are stateless b/c there is no state object.
+-in react 16.8,they introduced a concepts called "hooks";
+-
+Hooks:
+-------
+-Hooks are nothing but function which implement all the features of class component into functional component
+
+Basic Hooks:
+------------
+1.useState();
+-syntax:-
+    const[state,setState]=useState();
+    -state it will store initial value 
+    -setstate is used to update the state
+2.useeffect();
+3.useContext();

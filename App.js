@@ -84,10 +84,10 @@ export default class App extends Component {
     )
   }
 } */
-import React from 'react'
+/* import React from 'react'
 import PropChildex from './propsex/PropChildex'
 import SubChild from './propsex/SubChild'
-
+import Child1 from './propsex/Child1'
 function App() {
   return (
     <div>
@@ -95,10 +95,22 @@ function App() {
         <h1>hi props children</h1>
         <SubChild/>
       </PropChildex>
-      
+      <Child1/>
     </div>
     
   )
 }
 
-export default App
+export default App */
+import React from 'react'
+import CBCStateEx from './stateexample/CBCStateEx'
+import FBCPropsEx from './propsex/FBCPropsEx';
+import { FBCStateEx } from './stateexample/FBCStateEx';
+export const App = () => {
+  return (
+    
+      <FBCStateEx/>
+    
+  )
+}
+export default App;
