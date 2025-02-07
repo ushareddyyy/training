@@ -1,10 +1,10 @@
 import React from 'react'
 
 export const FBCStateEx = () => {
-    const [value,setValue]=React.useState(0);
+    const [value,setValue]=React.useState("hello");
     console.log(value);
     const changeValue=()=>{
-        setValue(1000);
+        setValue("world");
     }
   return (
     <div>FBCStateEx

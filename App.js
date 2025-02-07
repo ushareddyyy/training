@@ -103,13 +103,23 @@ function App() {
 
 export default App */
 import React from 'react'
+
 import CBCStateEx from './stateexample/CBCStateEx'
 import FBCPropsEx from './propsex/FBCPropsEx';
 import { FBCStateEx } from './stateexample/FBCStateEx';
+import FunctionalComponent from './components/FunctionalComponent'
 export const App = () => {
   return (
     
-      <FBCStateEx/>
+      //<FBCStateEx/>
+      <div className='App'>
+        <h1 class='heading'>so fast </h1>
+        
+        <FunctionalComponent cname="Mru" apply={true}>
+          <h1>i am usha</h1>
+        </FunctionalComponent>
+      </div>
+      
     
   )
 }
