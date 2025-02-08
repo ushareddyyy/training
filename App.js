@@ -108,16 +108,20 @@ import CBCStateEx from './stateexample/CBCStateEx'
 import FBCPropsEx from './propsex/FBCPropsEx';
 import { FBCStateEx } from './stateexample/FBCStateEx';
 import FunctionalComponent from './components/FunctionalComponent'
+import { ClassComponent } from './components/ClassComponent';
+import MyForm from './components/MyForm'
 export const App = () => {
   return (
     
       //<FBCStateEx/>
       <div className='App'>
-        <h1 class='heading'>so fast </h1>
+        {/* <h1 class='heading1'>welcome </h1> */}
         
-        <FunctionalComponent cname="Mru" apply={true}>
+        {/*  <FunctionalComponent cname="Mru" name="bye" apply={true}>
           <h1>i am usha</h1>
-        </FunctionalComponent>
+        </FunctionalComponent>  */}
+        <MyForm/>
+        {/* <ClassComponent/> */}
       </div>
       
     

@@ -11,9 +11,10 @@ function FunctionalComponent(props) {
     }
   return (
     <div >FunctionalComponent
-        <h1 class={'${applyStyle} font-style'}>hello</h1>
+        <h1 class={'${applyStyle} font-style'}>Mallareddy University</h1>
         <h1 class={applyStyle}>{props.cname}</h1>
         <h1 style={inlineStyle}>{props.children}</h1>
+        <h2 class='heading1'>{props.name}</h2>
     </div>
   )
 }
