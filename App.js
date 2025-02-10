@@ -102,7 +102,7 @@ function App() {
 }
 
 export default App */
-import React from 'react'
+/* import React from 'react'
 
 import CBCStateEx from './stateexample/CBCStateEx'
 import FBCPropsEx from './propsex/FBCPropsEx';
@@ -115,16 +115,110 @@ export const App = () => {
     
       //<FBCStateEx/>
       <div className='App'>
-        {/* <h1 class='heading1'>welcome </h1> */}
+         <h1 class='heading1'>welcome </h1> 
         
-        {/*  <FunctionalComponent cname="Mru" name="bye" apply={true}>
+         <FunctionalComponent cname="Mru" name="bye" apply={true}>
           <h1>i am usha</h1>
-        </FunctionalComponent>  */}
+        </FunctionalComponent>  
         <MyForm/>
-        {/* <ClassComponent/> */}
+         <ClassComponent/> 
       </div>
       
     
   )
 }
-export default App;
+export default App; */
+/* import { useState } from "react";
+import "./SampleApp.css";
+import SampleApp from "./SampleApp";
+
+export default function App() {
+  return (
+    <div className="app-container">
+      <SampleApp />
+    </div>
+  );
+} */
+/* 
+import React, { useState } from 'react';
+import DoctorList from './SampleApp/DoctorList';
+import TimeSlot from './SampleApp/TimeSlot';
+import AppointmentForm from './SampleApp/AppointmentForm';
+import './App.css';
+import Alert from './SampleApp/Alert';
+
+function App() {
+  const [selectedDoctor, setSelectedDoctor] = useState(null);
+  const [selectedTimeSlot, setSelectedTimeSlot] = useState(null);
+  const [alertMessage, setAlertMessage] = useState('');
+  const [step, setStep] = useState(1);
+
+  const doctors = [
+    {
+      id: 1,
+      name: 'Dr. John Smith',
+      specialty: 'Cardiology',
+      image: 'https://images.pexels.com/photos/1170979/pexels-photo-1170979.jpeg',
+    },
+    {
+      id: 2,
+      name: 'Dr.Shilpahasa',
+      specialty: 'Dermatology',
+      image: 'https://images.pexels.com/photos/1170979/pexels-photo-1170979.jpeg',
+    },
+    // Add more doctors as needed
+  ];
+
+  const timeSlots = [
+    '09:00 AM - 09:30 AM',
+    '10:00 AM - 10:30 AM',
+    '11:00 AM - 11:30 AM',
+    // Add more time slots as needed
+  ];
+
+  const bookAppointment = (appointmentDetails) => {
+    console.log('Appointment booked:', appointmentDetails);
+    setAlertMessage(
+      `Your appointment with Dr. ${appointmentDetails.doctor.name} on ${appointmentDetails.timeSlot} has been successfully booked.`
+    );
+    setStep(1); // Reset to first step after booking
+    setSelectedDoctor(null);
+    setSelectedTimeSlot(null);
+  };
+
+  const closeAlert = () => {
+    setAlertMessage('');
+  };
+
+  return (
+    <div className="app-container">
+      <Alert message={alertMessage} onClose={closeAlert} />
+      {step === 1 ? (
+        <DoctorList doctors={doctors} selectDoctor={(doctor) => { setSelectedDoctor(doctor); setStep(2); }} />
+      ) : step === 2 ? (
+        <TimeSlot timeSlots={timeSlots} selectTimeSlot={(slot) => { setSelectedTimeSlot(slot); setStep(3); }} />
+      ) : (
+        <AppointmentForm
+          doctor={selectedDoctor}
+          timeSlot={selectedTimeSlot}
+          bookAppointment={bookAppointment}
+        />
+      )}
+    </div>
+  );
+}
+
+export default App; */
+import React from 'react'
+import UseeffectEx from './hooksexamples/UseeffectEx'
+
+const App = () => {
+  return (
+    <div classNAme='App'>
+      <UseeffectEx/>
+    </div>
+  )
+}
+
+export default App
+

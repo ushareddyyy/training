@@ -175,9 +175,41 @@ Hooks:
 Basic Hooks:
 ------------
 1.useState();
+-------------
 -syntax:-
     const[state,setState]=useState();
     -state it will store initial value 
     -setstate is used to update the state
-2.useeffect();
+2.useEffect();
 3.useContext();
+
+Day 20
+_______
+
+Controlled Components or Elements:
+---------------------------------
+-Form Handling:
+---------------
+-checking data whether correct or not
+-<form>
+
+
+</form>
+
+DAY 21
+_____________________
+2.useEffect();
+---------------
+-it allows developers to make necessary changes or side effects inside the component
+Syntax:-
+    -useeffect(callbackfn,dependency)
+
+List &Key:
+----------
+
+React.fragment
+--------------
+-this will be act as jsx element and we can give key prop foer tag
+-<></>:-it will act as a parent as but we cant give key prop
+<React.Fragment></React.Fragment>;-it will act as a parentas well as we can give as key prop
+
